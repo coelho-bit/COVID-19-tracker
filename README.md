@@ -2,8 +2,8 @@
 
 This project tracks estatistics of COVID-19 around the world and by single country.
 
-Credits
-API used : https://covid19.mathdro.id/api
+## Credits
+https://covid19.mathdro.id/api
 https://github.com/mathdroid/covid-19-api
 
 ## Getting Started
