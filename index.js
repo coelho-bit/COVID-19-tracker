@@ -5,5 +5,5 @@ const SearchController = require('./controller/SearchController');
 
 express()
   .get('/', DataController.index)
-  .get('/search/:country', SearchController.search)
+  .get('/country/:country', SearchController.search)
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
