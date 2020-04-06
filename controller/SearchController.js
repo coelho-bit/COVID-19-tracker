@@ -8,6 +8,8 @@ module.exports = {
         const apiResponse = await axios.get(`${base_URL}/countries/${country}`);
         const data = dataFormat(apiResponse);
         
-        res.json({country, data});
+        const info = ['https://coelhocovid19tracker.herokuapp.com // to get the world data and list of country that is being tracked', 'https://coelhocovid19tracker.herokuapp.com/search/[CountryName] // search single Country data']
+
+        res.json({info, country, data});
     }
 }

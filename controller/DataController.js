@@ -9,7 +9,9 @@ module.exports = {
         const data = dataFormat(apiResponse);
         const countriesList = []
 
+        const info = ['https://coelhocovid19tracker.herokuapp.com // to get the world data and list of country that is being tracked', 'https://coelhocovid19tracker.herokuapp.com/search/[CountryName] // search single Country data']
+
         countries.data.countries.forEach(el => countriesList.push(el.name))
-        res.json({data, countriesList});
+        res.json({info, data, countriesList});
     }
 }
