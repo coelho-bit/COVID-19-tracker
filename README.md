@@ -13,8 +13,8 @@ https://github.com/mathdroid/covid-19-api
 
 ### Prerequisites
 
-First of all you will need to install **nodeJS**(recommended the LTS version)
-A code editor(as i sad **vs code** preferably)
+- First of all you will need to install **nodeJS**(recommended the LTS version)
+- A code editor(as i sad **vs code** preferably)
 
 ### Installing
 
@@ -35,7 +35,7 @@ A code editor(as i sad **vs code** preferably)
 
 ## Examples
 
-- finding all data: 
+### finding all data: 
   - Do a get request at localhost:5000
   response ex : 
   ```
@@ -52,7 +52,7 @@ A code editor(as i sad **vs code** preferably)
   }
   ```
   
-- finding data by country:
+### finding data by country:
   - Do a get request passing a country name at localhost:5000/country/{countryName}
   response ex :   
   ``` 
