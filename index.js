@@ -1,7 +1,9 @@
 const express = require('express')
 const PORT = process.env.PORT || 5000
-const routes = require('./routes');
+const DataController = require('./controller/DataController');
+const SearchController = require('./controller/SearchController');
 
 express()
-  .use(routes)
+  .get('/', DataController.index)
+  .get('/search/:country', SearchController.search)
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
