@@ -8,84 +8,71 @@ https://github.com/mathdroid/covid-19-api
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+- Clone the repo
+- open with some code editor(**vs code** preferably)
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-
-Give examples
-
+First of all you will need to install **nodeJS**(recommended the LTS version)
+A code editor(as i sad **vs code** preferably)
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+- open the project in the editor
+- if you are using vscode open the terminal coupled and type npm install
+  else just open your terminal and go to the file where the project is and do the same thing(npm install)
 
-Say what the step will be
+## Running
 
+- open package.json and make sure that your "script" session looks like this:   
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+- go to the terminal and type in npm run start
+- the application is now running on PORT 5000 so you just have to make a request, go to your browser and search for localhost:5000.
+- Thats it.
 
-Give the example
+## Examples
 
-
-And repeat
-
-
-until finished
-
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-
-Give an example
-
-
-### And coding style tests
-
-Explain what these tests test and why
-
-
-Give an example
-
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+- finding all data: 
+  - Do a get request at localhost:5000
+  response ex : 
+  ```
+  {
+    "data": {
+      "active": "975.372",
+      "confirmed": "1.324.907",
+      "deaths": "73.703",
+      "recovered": "275.832",
+      "pct": "0.0170%", 
+      "date": "Mon Apr 06 2020 19:33:29 GMT+0000 (Coordinated Universal Time)"
+    },
+    "countriesList": [...]
+  }
+  ```
+  
+- finding data by country:
+  - Do a get request passing a country name at localhost:5000/country/{countryName}
+  response ex :   
+  ``` 
+  {
+    "country": "Brazil",
+    "data": {
+      "active": "11.078",
+      "confirmed": "11.721",
+      "deaths": "516",
+      "recovered": "127",
+      "pct": "0.0002%",
+      "date": "Mon Apr 06 2020 20:56:31 GMT+0000 (Coordinated Universal Time)"
+    } 
+  }
+  ```
+ 
 
 ## Authors
 
-* *Billie Thompson* - Initial work - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+- **Joel Coelho**
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
