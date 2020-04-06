@@ -12,8 +12,15 @@
     "express": "^4.17.1",
     "string-mask": "^0.3.0"
   },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
   "devDependencies": {
     "axios": "^0.19.2",
     "nodemon": "^2.0.2"
+  },
+  "engines": {
+    "node": "12.16.1"
   }
 }
