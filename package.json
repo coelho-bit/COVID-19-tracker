@@ -10,6 +10,7 @@
     "start": "node index.js"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "express": "^4.17.1",
     "string-mask": "^0.3.0"
   },
@@ -20,7 +21,6 @@
     "heroku"
   ],
   "devDependencies": {
-    "axios": "^0.19.2",
     "nodemon": "^2.0.2"
   }
 }
