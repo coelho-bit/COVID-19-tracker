@@ -25,12 +25,13 @@ A code editor(as i sad **vs code** preferably)
 ## Running
 
 - open package.json and make sure that your "script" session looks like this:   
+  ```
   "scripts": {
     "start": "nodemon index.js"
   },
+  ```
 - go to the terminal and type in npm run start
-- the application is now running on PORT 5000 so you just have to make a request, go to your browser and search for localhost:5000.
-- Thats it.
+- the application is now running on PORT 5000 so you just have to make a request, go to your browser and search for **localhost:5000.
 
 ## Examples
 
